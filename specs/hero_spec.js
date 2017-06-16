@@ -1,10 +1,19 @@
 var Hero = require("../hero");
 // var Task = require("../task");
 // var Food = require("../food");
+var assert = require('assert');
+
 
 describe("Nick's D&D hamework...",function(){
-  it("ONE: Hero has a name", function(){
 
+  // beforeEach(function() {
+  //   var glorfindel = new Hero("Glorfindel")
+  // });
+
+
+  it("ONE: Hero has a name", function(){
+    var glorfindel = new Hero("Glorfindel");
+    assert.equal("Glorfindel",glorfindel.name);
   });
   // it("TWO: Hero has a health-level", function(){
 
