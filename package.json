@@ -1,0 +1,19 @@
+{
+  "name": "heroes_and_rate",
+  "version": "1.0.0",
+  "description": "The task is to test drive the beginnings of an adventure game!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickBulbeck/Week10Weekend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickBulbeck/Week10Weekend/issues"
+  },
+  "homepage": "https://github.com/NickBulbeck/Week10Weekend#readme"
+}
