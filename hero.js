@@ -28,7 +28,8 @@ Hero.prototype = {
     if (this.health < 0) {
       this.health = 0;
       console.log(this.name);
-      console.log("Aw naw, ahm deid so ah am!");
+      console.log("Aw naw, ahm pure deid so ah am!");
+// On death, all heroes reveal their true Weegie nature
     }
   },
   assign: function(task) {
@@ -43,7 +44,12 @@ Hero.prototype = {
     }
   },
   taskByUrgency: function() {
-
+    this.taskList.sort(function(task1, task2) {
+      return task2.urgency - task1.urgency;
+    })
+    for (task of this.taskList) {
+      console.log(task.name + " urgency: " + task.urgency);
+    }
   },
   taskByReward: function() {
 

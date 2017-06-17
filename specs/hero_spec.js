@@ -4,13 +4,20 @@ var Food = require("../food");
 var Rat = require("../rat");
 var assert = require('assert');
 
+function setUpGlorfindel(){
+  var glorfindel = new Hero("Glorfindel",
+                             50,
+                             "Lembas");
+  return glorfindel;  
+}
 
 describe("Nick's D&D hamework: Hero...",function(){
 
   it("1: Hero has a name", function(){
-    var glorfindel = new Hero("Glorfindel",
-                               50,
-                               "Lembas");
+    // var glorfindel = new Hero("Glorfindel",
+    //                            50,
+    //                            "Lembas");
+    var glorfindel = setUpGlorfindel();
     assert.equal("Glorfindel",glorfindel.name);
   });
   it("2: Hero has a health-level", function(){
