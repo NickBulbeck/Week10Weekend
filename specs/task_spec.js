@@ -3,7 +3,7 @@ var Task = require("../task");
 // var Food = require("../food");
 var assert = require('assert');
 
-describe("Nick's D&D hamework...",function(){
+describe("Nick's D&D hamework: Task...",function(){
   it("1: Task has a name", function(){
     var task1 = new Task("Feed the ducks",5,2,10);
     assert.equal("Feed the ducks",task1.name);

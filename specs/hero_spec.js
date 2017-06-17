@@ -4,7 +4,7 @@ var Food = require("../food");
 var assert = require('assert');
 
 
-describe("Nick's D&D hamework...",function(){
+describe("Nick's D&D hamework: Hero...",function(){
 
   it("1: Hero has a name", function(){
     var glorfindel = new Hero("Glorfindel",
@@ -70,6 +70,20 @@ describe("Nick's D&D hamework...",function(){
     glorfindel.eat(lembas);
     assert.equal(20,glorfindel.health);
   })
+
+  it("8: Hero can be assigned a task", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas");
+    var task1 = new Task("Feed ducks",5,2,10);
+    var task2 = new Task("Defeat Balrog",30,10,30);
+    var task3 = new Task("Find Frodo",10,35,15);
+    glorfindel.assign(task1);
+    glorfindel.assign(task2);
+    glorfindel.assign(task3);
+    assert.equal(3,glorfindel.taskList.length);
+  })
+
 
   // it("8: Hero can sort task-list by difficulty", function(){
     

@@ -3,7 +3,7 @@
 var Food = require("../food");
 var assert = require('assert');
 
-describe("Nick's D&D hamework...",function(){
+describe("Nick's D&D hamework: Food...",function(){
   it("1: Food has a name", function(){
     var lasagne = new Food("lasagne",7);
     assert.equal("lasagne",lasagne.name);

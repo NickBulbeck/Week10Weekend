@@ -28,8 +28,10 @@ Hero.prototype = {
         this.health += food.nutrition;
       }
     }
+  },
+  assign: function(task) {
+    this.taskList.push(task);
   }
-
 }
 
 module.exports = Hero;
