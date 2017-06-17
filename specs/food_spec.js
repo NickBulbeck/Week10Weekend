@@ -20,7 +20,8 @@ describe("Nick's D&D hamework...",function(){
     var lasagne = new Food("lasagne",7);
     assert.equal(false,lasagne.isContaminated);
     lasagne.poison();
-    assert.equal(true,lasagne.isContaminated);
+    // assert.equal(true,lasagne.isContaminated);
+    assert(lasagne.isContaminated);
   });
 
 })
