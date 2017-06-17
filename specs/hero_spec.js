@@ -20,9 +20,13 @@ describe("Nick's D&D hamework...",function(){
                                "Mae govannon!");
     assert.equal(50,glorfindel.health);
   });
-  // it("3: Hero has a favourite food", function(){
-
-  // });
+  it("3: Hero has a favourite food", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas",
+                               "Mae govannon!");
+    assert.equal("Lembas",glorfindel.favouriteFood);
+  });
   // it("4: Hero can talk", function(){
 
   // });
