@@ -10,7 +10,8 @@ var Hero = function(name,
 
 Hero.prototype = {
   announce: function(){
-    return ("I am",this.name + "!");
+    var salutation = "I am " + this.name + "!";
+    return salutation;
   }
 }
 module.exports = Hero;
