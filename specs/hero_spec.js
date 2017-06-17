@@ -6,18 +6,20 @@ var assert = require('assert');
 
 describe("Nick's D&D hamework...",function(){
 
-  // beforeEach(function() {
-  //   var glorfindel = new Hero("Glorfindel")
-  // });
-
-
   it("1: Hero has a name", function(){
-    var glorfindel = new Hero("Glorfindel");
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas",
+                               "Mae govannon!");
     assert.equal("Glorfindel",glorfindel.name);
   });
-  // it("2: Hero has a health-level", function(){
-
-  // });
+  it("2: Hero has a health-level", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas",
+                               "Mae govannon!");
+    assert.equal(50,glorfindel.health);
+  });
   // it("3: Hero has a favourite food", function(){
 
   // });

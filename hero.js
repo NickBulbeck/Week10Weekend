@@ -1,7 +1,11 @@
 var _ = require("lodash");
 
-var Hero = function(name) {
+var Hero = function(name,
+                    health,
+                    favouriteFood,
+                    catchPhrase) {
   this.name = name;
+  this.health = health;
 }
 
 Hero.prototype = {
