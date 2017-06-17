@@ -20,10 +20,10 @@ describe("Nick's D&D hamework...",function(){
     var task1 = new Task("Feed the ducks",5,2,10);
     assert.equal(10,task1.reward);
   });
-  // it("5: Task begins uncompleted", function(){
-    // var task1 = new Task("Feed the ducks",5,2,10);
-    // assert.equal(false,task1.isComplete);
-  // });
+  it("5: Task begins uncompleted", function(){
+    var task1 = new Task("Feed the ducks",5,2,10);
+    assert.equal(false,task1.isComplete);
+  });
   // it("6: Task can be marked as complete", function(){
     // var task1 = new Task("Feed the ducks",5,2,10);
     // assert.equal(false,task1.isComplete);
