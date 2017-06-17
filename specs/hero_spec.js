@@ -9,30 +9,26 @@ describe("Nick's D&D hamework...",function(){
   it("1: Hero has a name", function(){
     var glorfindel = new Hero("Glorfindel",
                                50,
-                               "Lembas",
-                               "Mae govannon!");
+                               "Lembas",);
     assert.equal("Glorfindel",glorfindel.name);
   });
   it("2: Hero has a health-level", function(){
     var glorfindel = new Hero("Glorfindel",
                                50,
-                               "Lembas",
-                               "Mae govannon!");
+                               "Lembas");
     assert.equal(50,glorfindel.health);
   });
   it("3: Hero has a favourite food", function(){
     var glorfindel = new Hero("Glorfindel",
                                50,
-                               "Lembas",
-                               "Mae govannon!");
+                               "Lembas");
     assert.equal("Lembas",glorfindel.favouriteFood);
   });
   it("4: Hero can talk", function(){
     var glorfindel = new Hero("Glorfindel",
                                50,
-                               "Lembas",
-                               "Mae govannon!");
-    assert.equal("Mae govannon!",glorfindel.catchPhrase);
+                               "Lembas");
+    assert.equal("I am Glorfindel!",glorfindel.announce());
   });
   // it("5: Hero begins with no tasks", function(){
 
