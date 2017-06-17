@@ -36,11 +36,13 @@ Hero.prototype = {
   },
   taskByDifficulty: function() {
     var newArray = this.taskList.sort(function(task1, task2) {
-      // Ascending: first age less than the previous
       return task1.difficulty - task2.difficulty;
     })
-    console.log(newArray);
-  }
+    for (task of this.taskList) {
+      console.log(task.name + " difficulty: " + task.difficulty);
+    }
+    // console.log(newArray);
+  },
   taskByUrgency: function() {
 
   },
