@@ -35,7 +35,20 @@ Hero.prototype = {
   },
   assign: function(task) {
     this.taskList.push(task);
+  },
+  taskByImportance: function() {
+
+  },
+  taskByImportance: function() {
+
+  },
+  taskByUrgency: function() {
+
+  },
+  taskByCompletion: function() {
+
   }
+
 }
 
 module.exports = Hero;

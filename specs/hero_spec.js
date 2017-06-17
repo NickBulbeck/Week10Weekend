@@ -106,6 +106,8 @@ describe("Nick's D&D hamework: Hero...",function(){
     glorfindel.assign(task2);
     glorfindel.assign(task3);
     assert.equal(3,glorfindel.taskList.length);
+    var testString = glorfindel.tasklist[1].name;
+    assert.equal("Defeat Balrog",testString);
   })
 
 
