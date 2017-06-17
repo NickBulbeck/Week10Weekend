@@ -16,18 +16,15 @@ Hero.prototype = {
   },
   eat: function(food) {
     if (food.isContaminated) {
-      if (food.name === this.favouriteFood) {
-        this.health -= food.nutrition * 1.5;
-      } else {
-        this.health -= food.nutrition;
-      }
-    } else {
-      if (food.name === this.favouriteFood) {
-        this.health += food.nutrition * 1.5;
-      } else {
-        this.health += food.nutrition;
-      }
+      console.log("Bleurgh... poisoned!")
     }
+
+    if (food.name === this.favouriteFood) {
+      this.health += food.nutrition * 1.5;
+    } else {
+      this.health += food.nutrition;
+    }
+
     if (this.health < 0) {
       this.health = 0;
       this.name = "... aw naw, ahm deid so ah am";
@@ -49,7 +46,7 @@ Hero.prototype = {
 
   },
   listOfAccomplishments: function() {
-    
+
   }
 
 }
