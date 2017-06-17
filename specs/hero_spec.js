@@ -11,41 +11,41 @@ describe("Nick's D&D hamework...",function(){
   // });
 
 
-  it("ONE: Hero has a name", function(){
+  it("1: Hero has a name", function(){
     var glorfindel = new Hero("Glorfindel");
     assert.equal("Glorfindel",glorfindel.name);
   });
-  // it("TWO: Hero has a health-level", function(){
+  // it("2: Hero has a health-level", function(){
 
   // });
-  // it("THREE: Hero has a favourite food", function(){
+  // it("3: Hero has a favourite food", function(){
 
   // });
-  // it("FOUR: Hero can talk", function(){
+  // it("4: Hero can talk", function(){
 
   // });
-  // it("FIVE: Hero has a mission ", function(){
+  // it("5: Hero has a mission ", function(){
 
   // });
-  // it("SIX: Hero can eat", function(){
+  // it("6: Hero can eat", function(){
 
   // })
-  // it("SEVEN: Hero can spot favourite food", function(){
+  // it("7: Hero can spot favourite food", function(){
 
   // })
-  // it("EIGHT: Hero can sort task-list by difficulty", function(){
+  // it("8: Hero can sort task-list by difficulty", function(){
     
   // })
-  // it("NINE: Hero can sort task-list by urgency", function(){
+  // it("9: Hero can sort task-list by urgency", function(){
     
   // })
-  // it("TEN: Hero can sort task-list by reward", function(){
+  // it("10: Hero can sort task-list by reward", function(){
     
   // })
-  // it("ELEVEN: Hero can view completed tasks", function(){
+  // it("11: Hero can view completed tasks", function(){
     
   // })
-  // it("TWELVE: Hero can view incomplete tasks", function(){
+  // it("12: Hero can view incomplete tasks", function(){
     
   // })
 
