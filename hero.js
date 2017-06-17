@@ -59,10 +59,24 @@ Hero.prototype = {
     }
   },
   showToDoList: function() {
-
+    var toDoList = [];
+    for (task of this.taskList) {
+      if (!task.isComplete) {
+        toDoList.push(task);
+        console.log(task.name);
+      }
+    }
+    return toDoList;
   },
   showDoneList: function() {
-
+    var doneList = [];
+    for (task of this.taskList) {
+      if (task.isComplete) {
+        doneList.push(task);
+        console.log(task.name);
+      }
+    }
+    return doneList;
   }
 
 }

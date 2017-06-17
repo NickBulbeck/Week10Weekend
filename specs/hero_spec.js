@@ -130,12 +130,17 @@ describe("Nick's D&D hamework: Hero...",function(){
     var glorfindel = setUpGlorfindel();
     glorfindel.taskList[0].markAsComplete();
     glorfindel.taskList[2].markAsComplete();
-    assert.equal(2,glorfindel.showToDoList.length);
+    var toDoList = glorfindel.showToDoList()
+    assert.equal(4,toDoList.length);
   })
 
-  // it("12: Hero can view incomplete tasks", function(){
-    
-  // })
+  it("12: Hero can view incomplete tasks", function(){
+    var glorfindel = setUpGlorfindel();
+    glorfindel.taskList[0].markAsComplete();
+    glorfindel.taskList[2].markAsComplete();
+    var doneList = glorfindel.showDoneList()
+    assert.equal(2,doneList.length);
+  })
 
 
 })
