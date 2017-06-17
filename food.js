@@ -7,7 +7,7 @@ var Food = function(name,nutrition) {
 }
 
 Food.prototype = {
-  poison: function(){
+  contaminate: function(){
     this.isContaminated = true;
   }
 }
