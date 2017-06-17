@@ -1,6 +1,7 @@
 var Hero = require("../hero");
 var Task = require("../task");
 var Food = require("../food");
+var Rat = require("../rat");
 var assert = require('assert');
 
 
@@ -67,6 +68,16 @@ describe("Nick's D&D hamework: Hero...",function(){
                                "Lembas");
     var lembas = new Food("Lembas",20);
     lembas.contaminate();
+    glorfindel.eat(lembas);
+    assert.equal(20,glorfindel.health);
+  })
+  it("7.3: Hero is poisoned by ratted favourite food", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas");
+    var lembas = new Food("Lembas",20);
+    var donaldTrump = new Rat();
+    donaldTrump.touch(lembas);
     glorfindel.eat(lembas);
     assert.equal(20,glorfindel.health);
   })

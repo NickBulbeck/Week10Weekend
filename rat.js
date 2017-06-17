@@ -4,7 +4,7 @@ var Rat = function() {
 
 Rat.prototype = {
   touch: function(food){
-    food.isContaminated = true;
+    food.contaminate();
   }
 }
 module.exports = Rat;
