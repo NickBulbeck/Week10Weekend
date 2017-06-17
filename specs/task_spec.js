@@ -16,10 +16,10 @@ describe("Nick's D&D hamework...",function(){
     var task1 = new Task("Feed the ducks",5,2,10);
     assert.equal(2,task1.urgency);
   });
-  // it("4: Task has a reward level", function(){
-    // var task1 = new Task("Feed the ducks",5,2,10);
-    // assert.equal(10,task1.reward);
-  // });
+  it("4: Task has a reward level", function(){
+    var task1 = new Task("Feed the ducks",5,2,10);
+    assert.equal(10,task1.reward);
+  });
   // it("5: Task begins uncompleted", function(){
     // var task1 = new Task("Feed the ducks",5,2,10);
     // assert.equal(false,task1.isComplete);
