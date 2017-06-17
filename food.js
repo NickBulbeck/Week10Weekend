@@ -9,6 +9,7 @@ var Food = function(name,nutrition) {
 Food.prototype = {
   contaminate: function(){
     this.isContaminated = true;
+    this.nutrition -= this.nutrition * 2;
   }
 }
 module.exports = Food;

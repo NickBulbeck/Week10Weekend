@@ -21,6 +21,7 @@ describe("Nick's D&D hamework: Food...",function(){
     assert.equal(false,lasagne.isContaminated);
     lasagne.contaminate();
     assert(lasagne.isContaminated);
+    assert.equal(-7,lasagne.nutrition);
   });
 
 })

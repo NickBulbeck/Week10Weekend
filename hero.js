@@ -37,7 +37,7 @@ Hero.prototype = {
     this.taskList.push(task);
   },
   taskByDifficulty: function() {
-    
+
   },
   taskByUrgency: function() {
 
@@ -45,8 +45,11 @@ Hero.prototype = {
   taskByReward: function() {
 
   },
-  taskByCompletion: function() {
+  toDoList: function() {
 
+  },
+  listOfAccomplishments: function() {
+    
   }
 
 }
