@@ -36,13 +36,13 @@ Hero.prototype = {
   assign: function(task) {
     this.taskList.push(task);
   },
-  taskByImportance: function() {
-
-  },
-  taskByImportance: function() {
-
+  taskByDifficulty: function() {
+    
   },
   taskByUrgency: function() {
+
+  },
+  taskByReward: function() {
 
   },
   taskByCompletion: function() {
