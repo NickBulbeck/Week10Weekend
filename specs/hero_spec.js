@@ -61,6 +61,15 @@ describe("Nick's D&D hamework...",function(){
     glorfindel.eat(lasagne);
     assert.equal(40,glorfindel.health);
   })
+  it("7.2: Hero is poisoned by favourite food", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas");
+    var lembas = new Food("Lembas",20);
+    lembas.contaminate();
+    glorfindel.eat(lembas);
+    assert.equal(20,glorfindel.health);
+  })
 
   // it("8: Hero can sort task-list by difficulty", function(){
     
