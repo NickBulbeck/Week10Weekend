@@ -30,9 +30,12 @@ describe("Nick's D&D hamework...",function(){
                                "Lembas");
     assert.equal("I am Glorfindel!",glorfindel.announce());
   });
-  // it("5: Hero begins with no tasks", function(){
-
-  // });
+  it("5: Hero begins with no tasks", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas");
+    assert.equal(0,glorfindel.taskList.length);
+  });
   // it("6: Hero can eat", function(){
 
   // })

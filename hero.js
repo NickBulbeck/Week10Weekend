@@ -6,6 +6,7 @@ var Hero = function(name,
   this.name = name;
   this.health = health;
   this.favouriteFood = favouriteFood;
+  this.taskList = [];
 }
 
 Hero.prototype = {
