@@ -44,9 +44,14 @@ describe("Nick's D&D hamework...",function(){
     glorfindel.eat(lasagne);
     assert.equal(60,glorfindel.health);
   })
-  // it("7: Hero can spot favourite food", function(){
-
-  // })
+  it("7: Hero can spot favourite food", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas");
+    var lasagne = new Food("Lembas",20);
+    glorfindel.eat(lasagne);
+    assert.equal(80,glorfindel.health);
+  })
   // it("8: Hero can sort task-list by difficulty", function(){
     
   // })
