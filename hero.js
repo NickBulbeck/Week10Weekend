@@ -35,13 +35,12 @@ Hero.prototype = {
     this.taskList.push(task);
   },
   taskByDifficulty: function() {
-    var newArray = this.taskList.sort(function(task1, task2) {
-      return task1.difficulty - task2.difficulty;
+    this.taskList.sort(function(task1, task2) {
+      return task2.difficulty - task1.difficulty;
     })
     for (task of this.taskList) {
       console.log(task.name + " difficulty: " + task.difficulty);
     }
-    // console.log(newArray);
   },
   taskByUrgency: function() {
 

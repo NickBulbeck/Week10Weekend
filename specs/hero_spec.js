@@ -126,6 +126,7 @@ describe("Nick's D&D hamework: Hero...",function(){
     glorfindel.assign(task5);
     glorfindel.assign(task6);
     glorfindel.taskByDifficulty();
+    assert.equal("Storm dark tower",glorfindel.taskList[0].name);
   })
   // it("9: Hero can sort task-list by urgency", function(){
     
