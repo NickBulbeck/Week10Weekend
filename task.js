@@ -12,6 +12,8 @@ var Task = function(name,
 }
 
 Task.prototype = {
-
+  markAsComplete: function(){
+    this.isComplete = true;
+  }
 }
 module.exports = Task;

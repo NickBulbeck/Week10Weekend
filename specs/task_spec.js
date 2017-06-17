@@ -24,12 +24,12 @@ describe("Nick's D&D hamework...",function(){
     var task1 = new Task("Feed the ducks",5,2,10);
     assert.equal(false,task1.isComplete);
   });
-  // it("6: Task can be marked as complete", function(){
-    // var task1 = new Task("Feed the ducks",5,2,10);
-    // assert.equal(false,task1.isComplete);
-    // task1.markAsComplete();
-    // assert(task1.isComplete);
-  // });
+  it("6: Task can be marked as complete", function(){
+    var task1 = new Task("Feed the ducks",5,2,10);
+    assert.equal(false,task1.isComplete);
+    task1.markAsComplete();
+    assert(task1.isComplete);
+  });
 
 
 
