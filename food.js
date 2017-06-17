@@ -7,6 +7,8 @@ var Food = function(name,nutrition) {
 }
 
 Food.prototype = {
-
+  poison: function(){
+    this.isContaminated = true;
+  }
 }
 module.exports = Food;
