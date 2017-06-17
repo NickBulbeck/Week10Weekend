@@ -28,6 +28,10 @@ Hero.prototype = {
         this.health += food.nutrition;
       }
     }
+    if (this.health < 0) {
+      this.health = 0;
+      this.name = "... aw naw, ahm deid so ah am";
+    }
   },
   assign: function(task) {
     this.taskList.push(task);

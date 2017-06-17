@@ -81,6 +81,19 @@ describe("Nick's D&D hamework: Hero...",function(){
     glorfindel.eat(lembas);
     assert.equal(20,glorfindel.health);
   })
+  it("7.4: Hero can die of poisoning",function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas");
+    var lembas = new Food("Lembas",20);
+    var donaldTrump = new Rat();
+    donaldTrump.touch(lembas);
+    glorfindel.eat(lembas);
+    glorfindel.eat(lembas);
+    assert.equal(0,glorfindel.health);
+    var deid = "I am ... och no, ahm deid so ah am!";
+    assert.equal(deid,glorfindel.announce());
+  })
 
   it("8: Hero can be assigned a task", function(){
     var glorfindel = new Hero("Glorfindel",
@@ -97,6 +110,12 @@ describe("Nick's D&D hamework: Hero...",function(){
 
 
   // it("8: Hero can sort task-list by difficulty", function(){
+    // var task1 = new Task("Feed ducks",5,2,10);
+    // var task2 = new Task("Defeat Balrog",30,10,30);
+    // var task3 = new Task("Find Frodo",10,35,15);
+    // var task4 = new Task("Storm dark tower",50,2,50);
+    // var task5 = new Task("Sing song of Valinor",2,5,6);
+    // var task6 = new Task("Return from halls of Mandos",14,6,32);
     
   // })
   // it("9: Hero can sort task-list by urgency", function(){
