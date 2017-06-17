@@ -125,10 +125,14 @@ describe("Nick's D&D hamework: Hero...",function(){
     glorfindel.taskByReward();
     assert.equal("Return from halls of Mandos",glorfindel.taskList[0].name);
   })
-  
-  // it("11: Hero can view completed tasks", function(){
-    
-  // })
+
+  it("11: Hero can view completed tasks", function(){
+    var glorfindel = setUpGlorfindel();
+    glorfindel.taskList[0].markAsComplete();
+    glorfindel.taskList[2].markAsComplete();
+    assert.equal(2,glorfindel.showToDoList.length);
+  })
+
   // it("12: Hero can view incomplete tasks", function(){
     
   // })

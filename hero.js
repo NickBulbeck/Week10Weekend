@@ -27,7 +27,6 @@ Hero.prototype = {
 
     if (this.health < 0) {
       this.health = 0;
-      console.log(this.name);
       console.log("Aw naw, ahm pure deid so ah am!");
 // On death, all heroes reveal their true Weegie nature
     }
@@ -59,10 +58,10 @@ Hero.prototype = {
       console.log(task.name + " reward: " + task.reward);
     }
   },
-  toDoList: function() {
+  showToDoList: function() {
 
   },
-  doneList: function() {
+  showDoneList: function() {
 
   }
 
