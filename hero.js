@@ -16,7 +16,7 @@ Hero.prototype = {
   },
   eat: function(food) {
     if (food.isContaminated) {
-      console.log("Bleurgh... poisoned!")
+      console.log("Bleurgh... poisoned!");
     }
 
     if (food.name === this.favouriteFood) {
@@ -27,15 +27,20 @@ Hero.prototype = {
 
     if (this.health < 0) {
       this.health = 0;
-      this.name = "... aw naw, ahm deid so ah am";
+      console.log(this.name);
+      console.log("Aw naw, ahm deid so ah am!");
     }
   },
   assign: function(task) {
     this.taskList.push(task);
   },
   taskByDifficulty: function() {
-
-  },
+    var newArray = this.taskList.sort(function(task1, task2) {
+      // Ascending: first age less than the previous
+      return task1.difficulty - task2.difficulty;
+    })
+    console.log(newArray);
+  }
   taskByUrgency: function() {
 
   },
