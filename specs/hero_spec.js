@@ -27,10 +27,14 @@ describe("Nick's D&D hamework...",function(){
                                "Mae govannon!");
     assert.equal("Lembas",glorfindel.favouriteFood);
   });
-  // it("4: Hero can talk", function(){
-
-  // });
-  // it("5: Hero has a mission ", function(){
+  it("4: Hero can talk", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas",
+                               "Mae govannon!");
+    assert.equal("Mae govannon!",glorfindel.catchPhrase);
+  });
+  // it("5: Hero begins with no tasks", function(){
 
   // });
   // it("6: Hero can eat", function(){

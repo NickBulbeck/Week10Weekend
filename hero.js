@@ -7,6 +7,7 @@ var Hero = function(name,
   this.name = name;
   this.health = health;
   this.favouriteFood = favouriteFood;
+  this.catchPhrase = catchPhrase;
 }
 
 Hero.prototype = {
