@@ -4,10 +4,10 @@ var Task = require("../task");
 var assert = require('assert');
 
 describe("Nick's D&D hamework...",function(){
-  it("1: Task has a difficulty level", function(){
+  // it("1: Task has a difficulty level", function(){
     // var task1 = new Task();
     // assert.equal(10,task1.difficulty);
-  });
+  // });
   // it("1: Task has an urgency level", function(){
     // var task1 = new Task();
     // assert.equal(5,task1.urgency);

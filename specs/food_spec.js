@@ -12,21 +12,16 @@ describe("Nick's D&D hamework...",function(){
   //   var lasagne = new Food("lasagne",7);
   //   // assert.equal(7,lasagne.nutrition);
   // });
-  // it("3: Food starts uncontaminated", function(){
+  // it("2: Food starts uncontaminated", function(){
   //   var lasagne = new Food("lasagne",7);
   //   // assert.equal(false,lasagne.isContaminated);
   // });
-  // it("4: Food can be contaminated", function(){
+  // it("2: Food can be contaminated", function(){
   //   var lasagne = new Food("lasagne",7);
   //   // assert.equal(false,lasagne.isContaminated);
-  //   // lasagne.poison();
-  //   // assert.equal(true,lasagne.isContaminated);
+    // lasagne.poison();
+    // assert.equal(true,lasagne.isContaminated);
 
   });
 
 
-
-
-
-
-})
