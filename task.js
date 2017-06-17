@@ -6,6 +6,8 @@ var Task = function(name,
                     reward) {
   this.name = name;
   this.difficulty = difficulty;
+  this.urgency = urgency;
+  
 }
 
 Task.prototype = {
