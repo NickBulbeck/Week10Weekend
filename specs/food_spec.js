@@ -19,7 +19,7 @@ describe("Nick's D&D hamework...",function(){
   it("2: Food can be contaminated", function(){
     var lasagne = new Food("lasagne",7);
     assert.equal(false,lasagne.isContaminated);
-    lasagne.poison();
+    lasagne.contaminate();
     assert(lasagne.isContaminated);
   });
 

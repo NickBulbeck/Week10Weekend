@@ -15,12 +15,21 @@ Hero.prototype = {
     return salutation;
   },
   eat: function(food) {
-    if (food.name === this.favouriteFood) {
-      this.health += food.nutrition * 1.5;
+    if (food.isContaminated) {
+      if (food.name === this.favouriteFood) {
+        this.health -= food.nutrition * 1.5;
+      } else {
+        this.health -= food.nutrition;
+      }
     } else {
-      this.health += food.nutrition;
-    };
+      if (food.name === this.favouriteFood) {
+        this.health += food.nutrition * 1.5;
+      } else {
+        this.health += food.nutrition;
+      }
+    }
   }
+
 }
 
 module.exports = Hero;

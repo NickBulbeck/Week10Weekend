@@ -48,10 +48,20 @@ describe("Nick's D&D hamework...",function(){
     var glorfindel = new Hero("Glorfindel",
                                50,
                                "Lembas");
-    var lasagne = new Food("Lembas",20);
-    glorfindel.eat(lasagne);
+    var lembas = new Food("Lembas",20);
+    glorfindel.eat(lembas);
     assert.equal(80,glorfindel.health);
   })
+  it("7.1: Hero can be poisoned", function(){
+    var glorfindel = new Hero("Glorfindel",
+                               50,
+                               "Lembas");
+    var lasagne = new Food("Lasagne",10);
+    lasagne.contaminate();
+    glorfindel.eat(lasagne);
+    assert.equal(40,glorfindel.health);
+  })
+
   // it("8: Hero can sort task-list by difficulty", function(){
     
   // })
