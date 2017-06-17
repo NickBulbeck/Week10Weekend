@@ -52,12 +52,17 @@ Hero.prototype = {
     }
   },
   taskByReward: function() {
-
+    this.taskList.sort(function(task1, task2) {
+      return task2.reward - task1.reward;
+    })
+    for (task of this.taskList) {
+      console.log(task.name + " reward: " + task.reward);
+    }
   },
   toDoList: function() {
 
   },
-  listOfAccomplishments: function() {
+  doneList: function() {
 
   }
 

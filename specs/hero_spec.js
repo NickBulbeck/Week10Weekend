@@ -13,7 +13,7 @@ function setUpGlorfindel(){
   var task3 = new Task("Find Frodo",10,35,15);
   var task4 = new Task("Storm dark tower",50,2,50);
   var task5 = new Task("Sing song of Valinor",2,5,6);
-  var task6 = new Task("Return from halls of Mandos",14,6,32);
+  var task6 = new Task("Return from halls of Mandos",14,6,55);
   glorfindel.assign(task1);
   glorfindel.assign(task2);
   glorfindel.assign(task3);
@@ -113,13 +113,19 @@ describe("Nick's D&D hamework: Hero...",function(){
     glorfindel.taskByDifficulty();
     assert.equal("Storm dark tower",glorfindel.taskList[0].name);
   })
+
+  it("9: Hero can sort task-list by urgency", function(){
+    var glorfindel = setUpGlorfindel();
+    glorfindel.taskByUrgency();
+    assert.equal("Find Frodo",glorfindel.taskList[0].name);
+  })
+
+  it("10: Hero can sort task-list by reward", function(){
+    var glorfindel = setUpGlorfindel();
+    glorfindel.taskByReward();
+    assert.equal("Return from halls of Mandos",glorfindel.taskList[0].name);
+  })
   
-  // it("9: Hero can sort task-list by urgency", function(){
-    
-  // })
-  // it("10: Hero can sort task-list by reward", function(){
-    
-  // })
   // it("11: Hero can view completed tasks", function(){
     
   // })
