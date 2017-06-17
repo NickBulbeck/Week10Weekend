@@ -91,7 +91,7 @@ describe("Nick's D&D hamework: Hero...",function(){
     glorfindel.eat(lembas);
     glorfindel.eat(lembas);
     assert.equal(0,glorfindel.health);
-    var deid = "I am ... och no, ahm deid so ah am!";
+    var deid = "I am ... aw naw, ahm deid so ah am!";
     assert.equal(deid,glorfindel.announce());
   })
 
