@@ -48,8 +48,8 @@ describe("Nick's D&D hamework: Hero...",function(){
   });
 
   it("5: Hero begins with no tasks", function(){
-    var glorfindel = setUpGlorfindel();
-    assert.equal(0,glorfindel.taskList.length);
+    var kevin = new Hero("Kevin",5,"Bacon");
+    assert.equal(0,kevin.taskList.length);
   });
 
   it("6: Hero can eat", function(){
@@ -102,35 +102,18 @@ describe("Nick's D&D hamework: Hero...",function(){
 
   it("8: Hero can be assigned a task", function(){
     var glorfindel = setUpGlorfindel();
-    var task1 = new Task("Feed ducks",5,2,10);
-    var task2 = new Task("Defeat Balrog",30,10,30);
-    var task3 = new Task("Find Frodo",10,35,15);
-    glorfindel.assign(task1);
-    glorfindel.assign(task2);
-    glorfindel.assign(task3);
-    assert.equal(3,glorfindel.taskList.length);
+    assert.equal(6,glorfindel.taskList.length);
     var testString = glorfindel.taskList[1].name;
     assert.equal("Defeat Balrog",testString);
   })
 
 
   it("8: Hero can sort task-list by difficulty", function(){
-    var task1 = new Task("Feed ducks",5,2,10);
-    var task2 = new Task("Defeat Balrog",30,10,30);
-    var task3 = new Task("Find Frodo",10,35,15);
-    var task4 = new Task("Storm dark tower",50,2,50);
-    var task5 = new Task("Sing song of Valinor",2,5,6);
-    var task6 = new Task("Return from halls of Mandos",14,6,32);
     var glorfindel = setUpGlorfindel();
-    glorfindel.assign(task1);
-    glorfindel.assign(task2);
-    glorfindel.assign(task3);
-    glorfindel.assign(task4);
-    glorfindel.assign(task5);
-    glorfindel.assign(task6);
     glorfindel.taskByDifficulty();
     assert.equal("Storm dark tower",glorfindel.taskList[0].name);
   })
+  
   // it("9: Hero can sort task-list by urgency", function(){
     
   // })
